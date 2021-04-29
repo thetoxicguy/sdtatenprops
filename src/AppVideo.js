@@ -3,7 +3,7 @@ import './App.css';
 import Nav from './components/Nav'
 import Video from './components/video'
 
-function App(props) {
+function AppVideo() {
   // we get 2 pieces from useState to put inside the brackets:
   // the variable (counter) and the function (setCounter) to operate this variable
   // the starting point for this state begins at 0
@@ -27,21 +27,11 @@ function App(props) {
   }
   return (
     <div className="App">
-      <Nav tgl = {toggle}/>
-      <h1>state</h1>
-      <h2 className = {toggle ? "active" : ""}>
-        Hello React
-      </h2>
-      <button onClick = {toggler}>
-        Toggle
-      </button>
-      <h2>Counter: {counter}</h2>
-      <button onClick = {incrementer}>
-        Increment
-      </button>
-      <Video nr = {counter} sToggle = {toggler}/>
+        <nav>
+            <Video nr = {counter}/>
+        </nav>
     </div>
   );
 }
 
-export default App;
+export default AppVideo;

@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AppFirst from './AppFirst'
+import AppImproved from './AppImproved'
+import App from './App';
+import Video from './components/video'
 
 ReactDOM.render(
   <React.StrictMode>
+    <AppFirst />
+    <AppImproved />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
